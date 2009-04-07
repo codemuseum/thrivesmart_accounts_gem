@@ -13,7 +13,7 @@ To enable the library your Rails 2.1 (or greater) project, use the gem configura
 
 <pre>
 Rails::Initializer.run do |config|
-  config.gem 'moorage-thrivesmart_accounts_gem', :lib => 'xml_protected', :source => 'http://gems.github.com'
+  config.gem 'moorage-thrivesmart_accounts_gem', :lib => 'thrivesmart_accounts_gem', :source => 'http://gems.github.com'
 end
 </pre>
 
