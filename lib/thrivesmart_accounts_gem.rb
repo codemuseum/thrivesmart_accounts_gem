@@ -17,7 +17,9 @@ module ThrivesmartAccounts
     end
   end
   
-  module User
-    #pending
+  #user.get
+  def user
+    RestClient::Resource.new "#{THRIVESMART_ACCOUNTS_URL}/profile"
   end
+  
 end
