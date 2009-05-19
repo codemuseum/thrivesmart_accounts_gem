@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'rest_client'
 
 module ThrivesmartAccounts

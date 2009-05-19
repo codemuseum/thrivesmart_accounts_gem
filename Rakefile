@@ -27,7 +27,7 @@ spec = Gem::Specification.new do |s|
   s.homepage = HOMEPAGE
   
   # Uncomment this to add a dependency
-  # s.add_dependency "foo"
+    s.add_dependency "rest-client", ">=0.9.2"
   
   s.require_path = 'lib'
   s.files = %w(LICENSE README.textile Rakefile) + Dir.glob("{lib,spec}/**/*")
