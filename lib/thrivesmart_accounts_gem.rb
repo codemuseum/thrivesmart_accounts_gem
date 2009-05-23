@@ -8,11 +8,12 @@ module ThrivesmartAccounts
       token = cookies[:auth_token]
       unless token
         redirect_to "#{THRIVESMART_ACCOUNTS_URL}/login"
-      end
-      begin 
-        RestClient.get "#{THRIVESMART_ACCOUNTS_URL}/validate-token/#{token}"
-      rescue
-        redirect_to "#{THRIVESMART_ACCOUNTS_URL}/login"
+      else
+        begin 
+          RestClient.get "#{THRIVESMART_ACCOUNTS_URL}/validate-token/#{token}"
+        rescue
+          redirect_to "#{THRIVESMART_ACCOUNTS_URL}/login"
+        end
       end
     end
   end
